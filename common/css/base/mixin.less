@@ -1,0 +1,34 @@
+@radix: 100;
+.px2rem(@name, @px) {
+    @{name}: @px / @radix * 1rem;
+}
+.remFontSize(@px) {
+  .px2rem(font-size, @px);
+}
+.remLineHeight(@px) {
+  .px2rem(line-height, @px);
+}
+.remWidth(@px) {
+  .px2rem(width, @px);
+}
+.remHeight(@px) {
+  .px2rem(height, @px);
+}
+.remMargin(@px) {
+  .px2rem(margin, @px);
+}
+.remPadding(@px) {
+  .px2rem(padding, @px);
+}
+.remPaddingAll( @top: auto, @right: auto, @bottom: auto, @left: auto ) {
+  .px2rem(padding-top, @top);
+  .px2rem(padding-right, @right);
+  .px2rem(padding-bottom, @bottom);
+  .px2rem(padding-left, @left);
+}
+.remMarginAll( @top: auto, @right: auto, @bottom: auto, @left: auto ) {
+  .px2rem(margin-top, @top);
+  .px2rem(margin-right, @right);
+  .px2rem(margin-bottom, @bottom);
+  .px2rem(margin-left, @left);
+}
